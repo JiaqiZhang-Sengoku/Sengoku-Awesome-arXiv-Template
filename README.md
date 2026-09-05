@@ -3,7 +3,7 @@
 **Sengoku** is a customizable LaTeX template for preprints and technical reports. It combines a colorful title card, flexible logos and author affiliations, and convenient links to code, datasets, and other project resources. With manuscript content separated from layout settings, you can focus on writing and adapt the same design to your own research.
 
 
-## Preview
+## 🎇 Preview
 
 <div align="center">
   <b>Sengoku</b><br>
@@ -15,7 +15,7 @@
   <img src="Figures/Figure2.png" alt="First page of the Sengoku template" width="80%">
 </div>
 
-## Quick Start
+## 🚀 Quick Start
 
 1. Download
 ```bash
@@ -27,7 +27,7 @@ git clone https://github.com/Arxiv-Template/Arxiv-Template.git
 5. Click **Recompile** and download your PDF.
 
 
-## Acknowledgments
+## 🎈 Acknowledgments
 
 Many thanks to [WangRongsheng/Arxiv-Template](https://github.com/WangRongsheng/Arxiv-Template), the reference template on which Sengoku is based.
 
