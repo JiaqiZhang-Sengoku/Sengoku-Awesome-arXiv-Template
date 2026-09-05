@@ -1,0 +1,23 @@
+\section{Method}
+\label{sec:method}
+
+Sengoku organizes document preparation around a small set of configuration commands and separate manuscript files. The following overview explains how to adapt the example while retaining the class's layout.
+
+\subsection{Front-matter configuration}
+
+The entry file, \texttt{main.tex}, controls the title, date, authors, affiliations, logos, and optional resource rows. Authors can use a plain title or the four-part \verb|\gradienttitle| command. The title stays centered on the card independently of its decorative logo. Separate top logos identify the institution and project.
+
+Affiliations are declared once and associated with authors through identifiers. Their logos are optional, and affiliation text can be arranged inline, in separate rows, or hidden. Resource rows can point to a project website, source code, datasets, model files, or contact information. Keeping only relevant rows makes the front matter easier to scan.
+
+\subsection{Modular content and resources}
+
+The \texttt{Sections/} directory holds the manuscript text, and \texttt{Sengoku.cls} defines typography and layout. The entry file assembles sections with \verb|\input|, allowing authors to revise or reorder content without changing the document class. Figures are stored in \texttt{Figures/}, while reusable logos and icons are kept in \texttt{AuxiliaryResources/}. Relative file paths keep these assets connected to the project when it is moved between a local editor and Overleaf.
+
+\subsection{Mathematical notation}
+
+The template uses standard \LaTeX{} equation environments and labels. For example, the mean of a collection of vectors can be written as
+\begin{equation}
+  \bar{\mathbf{x}} = \frac{1}{n}\sum_{i=1}^{n} \mathbf{x}_i.
+  \label{eq:mean}
+\end{equation}
+Here, $n \geq 1$ is the number of observations, $\mathbf{x}_i \in \mathbb{R}^{d}$ is the $i$th observation, and $\bar{\mathbf{x}}$ is their component-wise arithmetic mean. Equation~\eqref{eq:mean} also demonstrates a numbered cross-reference that stays synchronized when equations are reordered.

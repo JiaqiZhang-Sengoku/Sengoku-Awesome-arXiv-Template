@@ -1,0 +1,17 @@
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+/main.pdf
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db

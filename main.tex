@@ -1,0 +1,74 @@
+\documentclass[11pt,letterpaper]{Sengoku}
+\usepackage{booktabs}
+
+\bibliographystyle{plainnat}
+
+\title{\gradienttitle{Sengoku}{Awesome}{arXiv}{Template!}}
+\date{\today}
+
+% \shorttitle{Sengoku Awesome arXiv Template!}
+\runningauthor{Jiaqi Zhang}
+
+% 2. Logo 设置（全部可选，每一行都可以单独注释）
+% 页首 Logo：左侧为江苏大学校徽，右侧为 Sengoku 标识。
+% 如需增加其他标识，可继续添加 addtoplogo；相邻间距由 toplogogap 控制。
+\toplogogap{3.5mm}
+\addtoplogo[height=10mm]{AuxiliaryResources/Logos/JiangsuUniversityMark.pdf}
+\righttoplogo[height=10mm,width=30mm]{AuxiliaryResources/Logos/Sengoku.pdf}
+
+% 标题 Logo：注释这一行即可完全隐藏。
+\titlelogo[height=15mm,xshift=8mm]{AuxiliaryResources/Logos/JiangsuUniversityMark.pdf}
+
+% 3. 单位
+% 顺序就是作者上标编号。这里只写单位名称，不需要网址。
+% layout 可改为：inline（自动换行）、rows（每校一行）、hidden（隐藏单位列表）。
+\affiliationlayout{inline}
+\affiliationgap{1.0em}
+
+\affiliation{jiangsu}{Jiangsu University}
+
+% 作者姓名前的校徽完全可选：注释某一行，只会隐藏该校校徽。
+% 如需裁边或单独调大小，可在最前面的 [] 中加入 trim、clip、height。
+\affiliationlogo{jiangsu}{AuxiliaryResources/Logos/JiangsuUniversityMark.pdf}
+
+
+% 4. 作者
+% 方括号填写上面的单位 ID；一位作者可以填写多个 ID。
+\author[jiangsu]{Jiaqi Zhang}
+
+
+% 5. 可选元数据
+% 图标写在 [] 中；不需要图标时直接省略 []。注释整行即可隐藏该项目。
+\metadatarowgap{0.9mm}
+\addmetadata[AuxiliaryResources/Icons/Calendar.pdf]{Publication Date}{\articledate}
+\addmetadata[AuxiliaryResources/Icons/Home.pdf]{Project Website}{Not provided}
+\addmetadata[AuxiliaryResources/Icons/GitHubLogo.pdf]{Code Repository}{Not provided}
+\addmetadata[AuxiliaryResources/Icons/WandBLogo.jpeg]{Training Logs}{Not applicable}
+\addmetadata[AuxiliaryResources/Icons/HuggingFace.pdf]{Model Weights \& Checkpoints}{Not applicable}
+\addmetadata[AuxiliaryResources/Icons/Books.pdf]{Datasets}{Not applicable}
+\addmetadata[AuxiliaryResources/Icons/Email.pdf]{Contact}{Not provided}
+
+\hypersetup{
+  pdfsubject={Research article}
+}
+
+\begin{document}
+
+\input{Sections/1_Abstract}
+\maketitle
+
+\input{Sections/2_Introduction}
+\input{Sections/3_RelatedWork}
+\input{Sections/4_Method}
+\input{Sections/5_Experiments}
+\input{Sections/6_Discussion}
+\input{Sections/7_Conclusion}
+\input{Sections/8_Acknowledgments}
+
+
+\bibliography{Reference}
+
+\appendix
+\input{Sections/9_Appendix}
+
+\end{document}
